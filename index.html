@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script src="src/GlasterBlaster.js"></script>
+    <script>
+        window.addEventListener("error", function (error) {
+            console.log("Uncaught Error: ");
+            console.log(error);
+            console.log(error.stack);
+        });
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Initialize our main application file.
+            var app = new window.GlasterBlaster();
+        });
+    </script>
+    <canvas id="glasterblaster" width="800" height="600"></canvas>
+</body>
+</html>
